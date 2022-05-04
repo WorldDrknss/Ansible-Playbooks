@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- name: dnf-update
   tasks:
     - name: update all packages - this is like running the 'dnf update' command
   dnf:
