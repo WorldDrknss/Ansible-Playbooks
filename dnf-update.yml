@@ -1,8 +1,9 @@
 ---
-- hosts: all
-- become: yes
-  tasks:
-    - name: update all packages - this is like running the 'dnf update' command
-      dnf:
-        name: "*"
-        state: latest
+  - name: dnf-update
+    hosts: all
+    become: yes
+    tasks:
+      - name: update all packages - this is like running the 'dnf update' command
+        dnf:
+          name: "*"
+          state: latest
