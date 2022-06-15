@@ -1,0 +1,7 @@
+---
+  - name: aide-update
+    hosts: all
+    become: yes
+    tasks:
+      - name: update AIDE database
+        command: aide --update
